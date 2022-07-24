@@ -33,7 +33,7 @@ const Game = (props) => {
         } else if (movesForGame === 'down') {
             return <img src='../down.png' alt='down'/>;
         } else if (movesForGame === 'right') {
-            return <img src='../right.png' alt='right'/>;
+            return <img src='./../images/right.png' alt='right'/>;
         } else if (movesForGame === 'left') {
             return <img src='../left.png' alt='left'/>;
         }
