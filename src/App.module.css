@@ -1,0 +1,165 @@
+:root {
+    --color-1: #186cb8;
+    --color-2: #2a9a9f;
+    --color-3: #f1b211;
+    --color-4: #e83611;
+    --color-5: #f9002f;
+}
+
+.container {
+    /*
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 0 auto;
+    background: url("./images/fon1.png") center no-repeat;
+    */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+    background: url("./images/fon2.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.game {
+
+}
+
+.image {
+    display: flex;
+}
+
+.colored {
+    /* фон */
+    /*background: #000;*/
+    /* межстрочное расстояние */
+    line-height: 1;
+    /* подключаем сетку */
+    display: grid;
+    /* ставим содержимое в центр */
+    place-items: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    /* настраиваем внешний вид шрифта */
+    font-family: sans-serif;
+    font-size: 9vw;
+    font-weight: 900;
+
+    /*-webkit-text-stroke: .05em rgba(0,0,0,.6);*/
+
+    /* подстраиваем ширину заголовка под самое длинное слово*/
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+
+
+    /* делаем автоматические отступы */
+    margin: auto;
+    /* переводим все буквы в заглавные */
+    text-transform: uppercase;
+
+    background: linear-gradient(219deg,
+    var(--color-1) 19%,
+    transparent 19%,transparent 20%,
+    var(--color-2) 20%, var(--color-2)  39%,
+    transparent 39%,transparent 40%,
+    var(--color-3) 40%,var(--color-3) 59% ,
+    transparent 59%,transparent 60%,
+    var(--color-4) 60%, var(--color-4) 79%,
+    transparent 79%, transparent 80%,
+    var(--color-5) 80%);
+    /* обрезаем фон по контуру букв */
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* делаем заголовок прозрачным, чтобы был виден цветной фон */
+    color: transparent;
+}
+
+.button {
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+.button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+.button:hover::before, .button:focus::before {
+    opacity: 1;
+}
+
+.button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.button:hover::after, .button:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}

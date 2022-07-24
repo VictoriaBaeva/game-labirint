@@ -1,0 +1,141 @@
+.game_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+}
+
+.image_field {
+    width: 250px;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.image img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.game_field {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    margin: 15px 0;
+}
+
+span {
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.buttonExit {
+    margin: 0 auto;
+    min-width: 250px;
+    min-height: 60px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+.buttonExit::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(250px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.buttonExit:hover, .buttonExit:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+.buttonExit:hover::before, .buttonExit:focus::before {
+    opacity: 1;
+}
+
+.buttonExit:hover::after, .buttonExit:focus::after {
+    display: none;
+}
+
+
+
+.modalWindow {
+    width: 100vw;
+    height: 100vh;
+    background: url("./../images/fon2.jpg") center no-repeat;
+    background-size: cover;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer {
+    width: 275px;
+    height: 150px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.modalText {
+    font-size: 35px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.modalFooter {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalButton {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: #4FD1C5;
+    color: #313133;
+    border-radius: 8px;
+    font-size: 17px;
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+}
+
+
