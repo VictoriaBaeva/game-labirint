@@ -29,13 +29,13 @@ const Game = (props) => {
 
     let arrows = (movesForGame) => {
         if (movesForGame === 'up') {
-            return <img src='../up.png' alt='up'/>;
+            return <img src='./../up.png' alt='up'/>;
         } else if (movesForGame === 'down') {
-            return <img src='../down.png' alt='down'/>;
+            return <img src='./../down.png' alt='down'/>;
         } else if (movesForGame === 'right') {
-            return <img src='./../images/right.png' alt='right'/>;
+            return <img src='./../right.png' alt='right'/>;
         } else if (movesForGame === 'left') {
-            return <img src='../left.png' alt='left'/>;
+            return <img src='./../left.png' alt='left'/>;
         }
     };
 
