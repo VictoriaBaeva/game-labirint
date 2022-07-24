@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/game-labirint/static/css/main.e15d661c.css",
-    "main.js": "/game-labirint/static/js/main.f6db7c5f.js",
+    "main.js": "/game-labirint/static/js/main.6640fe33.js",
     "static/js/787.8c0b72f9.chunk.js": "/game-labirint/static/js/787.8c0b72f9.chunk.js",
     "static/media/fon2.jpg": "/game-labirint/static/media/fon2.d43fae92e6903ff2e35f.jpg",
     "static/media/start-button.png": "/game-labirint/static/media/start-button.967a9b59fdfe9d514d45.png",
     "index.html": "/game-labirint/index.html",
     "main.e15d661c.css.map": "/game-labirint/static/css/main.e15d661c.css.map",
-    "main.f6db7c5f.js.map": "/game-labirint/static/js/main.f6db7c5f.js.map",
+    "main.6640fe33.js.map": "/game-labirint/static/js/main.6640fe33.js.map",
     "787.8c0b72f9.chunk.js.map": "/game-labirint/static/js/787.8c0b72f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e15d661c.css",
-    "static/js/main.f6db7c5f.js"
+    "static/js/main.6640fe33.js"
   ]
 }
